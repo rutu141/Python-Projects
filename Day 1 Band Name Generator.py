@@ -1,0 +1,5 @@
+print("enter your birth city")
+city = input()
+print("enter your pets name")
+pet_name = input()
+print("Your band name is :"+city+" "+pet_name)
