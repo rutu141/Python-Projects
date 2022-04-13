@@ -1,0 +1,11 @@
+print("Welcome to the tip calculator")
+bill = input("what was the total bill ? $")
+bill = int(bill)
+ptip = input("what percent tip would you you like to give ? 10,12 or 15")
+ptip = int(ptip)
+n = input("how many people would you like to split the bill among ?")
+n = int(n)
+tip = bill*ptip/100
+total_bill=bill+tip
+contribution = total_bill/n
+print(f"each person should contribute :,{contribution}")
