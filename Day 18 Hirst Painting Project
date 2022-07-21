@@ -1,0 +1,45 @@
+import turtle
+from turtle import Turtle , Screen
+import random
+tim = Turtle()
+tim.shape("turtle")
+tim.penup()
+tim.speed("fastest")
+# import colorgram
+# colours = colorgram.extract('images.jpeg',30)
+#
+# rgb_colors=[]
+#
+#
+# for color in colours:
+#     r = color.rgb.r
+#     g = color.rgb.g
+#     b = color.rgb.b
+#     new_color = (r, g, b)
+#     rgb_colors.append(new_color)
+turtle.colormode(255)
+color_list = [(226, 230, 236), (59, 105, 148), (224, 201, 111), (231, 223, 203), (222, 234, 229), (220, 146, 74), (131, 84, 57), (195, 145, 171), (141, 176, 201), (141, 79, 104), (235, 222, 231), (210, 91, 68), (66, 110, 89), (134, 181, 137), (143, 133, 72), (185, 82, 122), (42, 156, 189), (66, 157, 93), (183, 191, 202), (10, 69, 125), (217, 174, 191), (10, 59, 103), (114, 121, 150), (172, 203, 182), (160, 206, 215), (139, 35, 46), (173, 30, 24), (226, 172, 165), (74, 57, 37), (75, 64, 51)]
+
+tim.setheading(225)
+tim.forward(300)
+tim.setheading(0)
+for _ in range(10):
+    for _ in range(10):
+        tim.dot(20, random.choice(color_list))
+        tim.forward(50)
+
+    tim.left(90)
+    tim.forward(50)
+    tim.setheading(180)
+    tim.forward(500)
+    tim.setheading(0)
+
+
+
+
+
+screen = Screen()
+screen.exitonclick()
+
+
+
